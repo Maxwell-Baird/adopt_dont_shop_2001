@@ -1,0 +1,58 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/config/environment.rb": {
+        "lines": [
+          null,
+          1,
+          null,
+          null,
+          0
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/config/application.rb": {
+        "lines": [
+          1,
+          null,
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/config/boot.rb": {
+        "lines": [
+          1,
+          null,
+          1
+        ]
+      }
+    },
+    "timestamp": 1584545029
+  }
+}
