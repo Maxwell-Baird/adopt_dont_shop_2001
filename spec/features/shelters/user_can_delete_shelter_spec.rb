@@ -17,6 +17,7 @@ RSpec.describe "shelter index page", type: :feature do
     expect(page).to have_content(shelter_2.name)
     visit "/shelters/#{shelter_1.id}"
     click_button "delete"
+    expect(current_path).to eq('/shelters')
     expect(page).to have_content(shelter_2.name)
     expect(current_path).to have_no_content(shelter_1.name)
   end
