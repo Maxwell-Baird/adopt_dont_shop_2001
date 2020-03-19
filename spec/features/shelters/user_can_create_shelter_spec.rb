@@ -10,8 +10,8 @@ RSpec.describe "shelter new page", type: :feature do
     fill_in 'shelter[state]', with: 'New York'
     fill_in 'shelter[zip]', with: '10012'
     click_button ('submit')
-    
+
     expect(current_path).to eq('/shelters')
-    expect(current_path).to have_link ("New York Pet Shelter")
+    expect(current_path).to have_content("New York Pet Shelter")
   end
 end
