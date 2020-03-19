@@ -8,7 +8,9 @@ RSpec.describe "shelter edit page", type: :feature do
                                state: 'Colorado',
                                zip: '80020')
 
-    visit "/shelters/#{shelter_1.id}/edit"
+    visit "/shelters/#{shelter_1.id}"
+    click_link 'Update Shelter'
+    expect(current_path).to eq("/shelters/#{shelter_1.id}/edit")
     fill_in 'shelter[name]', with: 'Denver Dog Shelter'
     fill_in 'shelter[city]', with: 'Denver'
     fill_in 'shelter[state]', with: 'Colorado'

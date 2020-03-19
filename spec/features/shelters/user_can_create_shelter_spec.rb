@@ -2,8 +2,9 @@ require 'rails_helper'
 
 RSpec.describe "shelter new page", type: :feature do
   it 'can create a shelter' do
-
-    visit "/shelters/new"
+    visit "/shelters"
+    click_link 'New Shelter'
+    expect(current_path).to eq('/shelters/new')
     fill_in 'shelter[name]', with: 'New York Pet Shelter'
     fill_in 'shelter[address]', with: '1111 fake st.'
     fill_in 'shelter[city]', with: 'New York City'
@@ -12,6 +13,6 @@ RSpec.describe "shelter new page", type: :feature do
     click_button ('submit')
 
     expect(current_path).to eq('/shelters')
-    expect(current_path).to have_content("New York Pet Shelter")
+    expect(page).to have_content("New York Pet Shelter")
   end
 end
