@@ -11,9 +11,6 @@ RSpec.describe "shelter edit page", type: :feature do
     visit "/shelters/#{shelter_1.id}"
     click_link 'Update Shelter'
     expect(current_path).to eq("/shelters/#{shelter_1.id}/edit")
-    fill_in 'name', with: 'Denver Dog Shelter'
-    fill_in 'city', with: 'Denver'
-    fill_in 'state', with: 'Colorado'
     fill_in 'address', with: '1111 fake st.'
     fill_in 'zip', with: '99099'
     click_button ('submit')
