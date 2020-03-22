@@ -29,12 +29,10 @@ RSpec.describe "shelter's pet index" do
 
      visit "/shelters/#{shelter_1.id}/pets"
      expect(page).to have_content(pet_1.name)
-     expect(page).to have_content("Status: #{pet_1.status}")
      expect(page).to have_content("Age: #{pet_1.age}")
      expect(page).to have_content("Sex: #{pet_1.sex}")
      expect(page).to have_css("img[src*='http://pngimg.com/uploads/dog/dog_PNG50348.png']")
      expect(page).to have_no_content(pet_2.name)
-     expect(page).to have_no_content("Status: #{pet_2.status}")
      expect(page).to have_no_content("Age: #{pet_2.age}")
      expect(page).to have_no_content("Sex: #{pet_2.sex}")
      expect(page).to have_no_css("img[src*='https://www.vhv.rs/file/max/36/361319_cute-dog-png.png']")
