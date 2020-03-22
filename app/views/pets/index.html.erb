@@ -2,11 +2,12 @@
 
 <% @pets.each do |pet| %>
   <p></p>
-  <h2><%= pet.name %></h2>
+  <h2><a href="/pets/<%= pet.id%>"><%= pet.name %></a></h2>
   <p>Age: <%= pet.age %></p>
   <p>Sex: <%= pet.sex %></p>
-  <p>Shelter: <%= pet.shelter.name %></p>
+  <p>Shelter: <a href="/shelters/<%= pet.shelter.id%>"><%= pet.shelter.name %></a></p>
   <img src=<%=pet.image%> width="100" height="100">
+  <p></p>
   <a href="/pets/<%= pet.id %>/edit">Update Pet</a>
   <form action="/pets/<%= pet.id %>" method="POST">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">

@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "shelter index page", type: :feature do
+RSpec.describe "shelter page", type: :feature do
   it "can delete a shelter" do
     shelter_1 = Shelter.create(name: 'Laramie Frog Center',
                                address: '1112 Main St.',
