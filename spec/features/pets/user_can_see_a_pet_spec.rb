@@ -1,5 +1,5 @@
-RSpec.describe "pet index page", type: :feature do
-  it "can see all pet names" do
+RSpec.describe "pet show page", type: :feature do
+  it "can see a pet attributes" do
     shelter_1 = Shelter.create(name: 'Broomfield Dog Shelter',
                                address: '1111 fake dr.',
                                city: 'Broomfield',
