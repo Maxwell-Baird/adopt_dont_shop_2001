@@ -1,3 +1,8 @@
+<div class="topnav">
+  <a href="/pets/">Pets Index</a>
+  <a href="/shelters">Shelters Index</a>
+</div>
+
 <h1><a href="/shelters/<%= @shelter.id%>"><%= @shelter.name %></a></h1>
 <a href="/shelters/<%= @shelter.id %>/pets/new">Create pet</a>
 <% @shelter.pets.each do |pet| %>
@@ -7,4 +12,9 @@
   <p>Age: <%= pet.age %></p>
   <p>Sex: <%= pet.sex %></p>
   <img src=<%=pet.image%> width="100" height="100">
+  <form action="/pets/<%= pet.id %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete Pet" id="Delete Pet <%= pet.id %>"/>
+  </form>
 <% end %>

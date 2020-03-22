@@ -9,7 +9,7 @@ RSpec.describe "pet new page", type: :feature do
                                zip: '80020')
     visit "/shelters/#{shelter_1.id}/pets"
     click_link 'Create pet'
-    expect(current_path).to eq("/shelters/#{shelter_1.id}/pets/new")
+    visit "/shelters/#{shelter_1.id}/pets/new"
     fill_in 'name', with: 'Bob'
     fill_in 'description', with: 'A quiet new born puppy'
     fill_in 'age', with: '4'

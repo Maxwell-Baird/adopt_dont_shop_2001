@@ -21,4 +21,5 @@ RSpec.describe "pet show page", type: :feature do
     expect(page).to have_css("img[src*='http://pngimg.com/uploads/dog/dog_PNG50348.png']")
     expect(page).to have_content(pet_1.description)
   end
+
 end

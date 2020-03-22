@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "pet show page", type: :feature do
-  it "can delete a p" do
+  it "can delete a pet" do
     shelter_1 = Shelter.create(name: 'Laramie Frog Center',
                                address: '1112 Main St.',
                                city: 'Laramie',
@@ -28,4 +28,5 @@ RSpec.describe "pet show page", type: :feature do
     expect(page).to have_content(pet_2.name)
     expect(page).to have_no_content(pet_1.name)
   end
+
 end

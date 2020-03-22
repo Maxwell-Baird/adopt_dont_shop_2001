@@ -1,3 +1,8 @@
+<div class="topnav">
+  <a href="/pets/">Pets</a>
+  <a href="/shelters">Shelters</a>
+</div>
+
 <%= form_tag "/shelters/#{@shelter_id}/pets" do %>
   <h3> Create a new pet </h3>
   <%= label_tag :name %>
