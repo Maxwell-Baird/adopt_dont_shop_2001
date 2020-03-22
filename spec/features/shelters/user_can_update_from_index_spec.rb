@@ -8,9 +8,10 @@ RSpec.describe "shelter index page", type: :feature do
                                state: 'Colorado',
                                zip: '80020')
 
+
     visit "/shelters"
     click_link 'Update Shelter'
     expect(current_path).to eq("/shelters/#{shelter_1.id}/edit")
-  
+
   end
 end
