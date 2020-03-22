@@ -7,7 +7,7 @@ RSpec.describe "pet index page", type: :feature do
                                city: 'Broomfield',
                                state: 'Colorado',
                                zip: '80020')
-    pet_1 = Pet.create(
+    pet_1 = Pet.create( description: 'A happy, playful guy who wants to eat meat',
                         name: 'Perry',
                         age: '12',
                         sex: 'Male',
@@ -19,7 +19,7 @@ RSpec.describe "pet index page", type: :feature do
                                city: 'Denver',
                                state: 'Colorado',
                                zip: '80020')
-    pet_2 = Pet.create(
+    pet_2 = Pet.create( description: 'A happy, playful guy who wants to eat meat',
                         name: 'Chanel',
                         age: '7',
                         sex: 'Female',

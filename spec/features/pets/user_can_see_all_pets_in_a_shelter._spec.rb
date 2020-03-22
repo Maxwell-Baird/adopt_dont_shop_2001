@@ -12,14 +12,16 @@ RSpec.describe "shelter's pet index" do
                               city: 'Denver',
                               state: 'Colorado',
                               zip: '80020')
-     pet_1 = Pet.create( status: "pending",
+     pet_1 = Pet.create( description: 'A happy, playful guy who wants to eat meat',
+                         status: "pending",
                          name: 'Perry',
                          age: '12',
                          sex: 'Male',
                          shelter: shelter_1,
                          image: 'http://pngimg.com/uploads/dog/dog_PNG50348.png'
      )
-     pet_2 = Pet.create( status: "adoptable",
+     pet_2 = Pet.create( description: 'A happy, playful guy who wants to eat meat',
+                         status: "adoptable",
                          name: 'Chanel',
                          age: '7',
                          sex: 'Female',

@@ -15,7 +15,7 @@ RSpec.describe "pet show page", type: :feature do
                          image: 'http://pngimg.com/uploads/dog/dog_PNG50348.png',
                          description: 'A happy, playful guy who wants to eat meat'
      )
-     pet_2 = Pet.create(
+     pet_2 = Pet.create( description: 'A happy, playful guy who wants to eat meat',
                          name: 'Chanel',
                          age: '7',
                          sex: 'Female',
