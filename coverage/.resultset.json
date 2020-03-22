@@ -495,6 +495,24 @@
         null,
         null
       ],
+      "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/spec/features/shelters/user_can_update_from_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/spec/models/shelter_spec.rb": [
         1,
         null,
@@ -593,7 +611,7 @@
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/app/controllers/shelters_controller.rb": [
         1,
         1,
-        5,
+        6,
         null,
         null,
         1,
@@ -617,7 +635,7 @@
         null,
         null,
         1,
-        1,
+        2,
         null,
         null,
         1,
@@ -645,6 +663,6 @@
         null
       ]
     },
-    "timestamp": 1584913989
+    "timestamp": 1584914216
   }
 }
