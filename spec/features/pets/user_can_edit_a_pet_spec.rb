@@ -7,7 +7,7 @@ RSpec.describe "Pet edit page", type: :feature do
                                city: 'Denver',
                                state: 'Colorado',
                                zip: '80020')
-   pet = Pet.create( status: "Pending",
+   pet = Pet.create(
                        name: 'Perry',
                        age: '12',
                        sex: 'Male',
@@ -26,9 +26,9 @@ RSpec.describe "Pet edit page", type: :feature do
     fill_in 'sex', with: 'Male'
     click_button ('Update Pet')
     expect(current_path).to eq("/pets/#{pet.id}")
-    eexpect(page).to have_content('Max')
+    expect(page).to have_content('Max')
     expect(page).to have_content("Age: 5")
-    expect(page).to have_content("Sex: Male}")
+    expect(page).to have_content("Sex: Male")
     expect(page).to have_content("Status: adoptable")
     expect(page).to have_css("img[src*='https://img.favpng.com/10/3/0/golden-retriever-siberian-husky-puppy-cuteness-pet-png-favpng-U4mu9rCCcrLCDyz1p1PEUiW9U.jpg']")
     expect(page).to have_content('He likes cats')

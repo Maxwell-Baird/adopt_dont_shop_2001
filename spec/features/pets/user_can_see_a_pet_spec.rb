@@ -5,7 +5,7 @@ RSpec.describe "pet show page", type: :feature do
                                city: 'Broomfield',
                                state: 'Colorado',
                                zip: '80020')
-    pet_1 = Pet.create( status: "Pending",
+    pet_1 = Pet.create(
                         name: 'Perry',
                         age: '12',
                         sex: 'Male',

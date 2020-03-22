@@ -194,6 +194,8 @@
         1,
         1,
         1,
+        1,
+        1,
         null
       ],
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/app/helpers/application_helper.rb": [
@@ -221,18 +223,18 @@
         null,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         0,
         0,
         null,
@@ -259,8 +261,8 @@
         1,
         1,
         1,
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
@@ -556,6 +558,7 @@
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/app/models/pet.rb": [
         1,
         1,
+        null,
         null
       ],
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/app/controllers/pets_controller.rb": [
@@ -566,7 +569,7 @@
         null,
         null,
         1,
-        2,
+        3,
         null,
         null,
         1,
@@ -577,6 +580,21 @@
         1,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         1,
         1,
         null,
@@ -589,6 +607,6 @@
         null
       ]
     },
-    "timestamp": 1584908074
+    "timestamp": 1584912742
   }
 }
