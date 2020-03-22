@@ -235,8 +235,8 @@
         1,
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
@@ -261,8 +261,8 @@
         1,
         1,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null
       ],
@@ -558,6 +558,9 @@
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/app/models/pet.rb": [
         1,
         1,
+        1,
+        1,
+        9,
         null,
         null
       ],
@@ -607,6 +610,6 @@
         null
       ]
     },
-    "timestamp": 1584912742
+    "timestamp": 1584913222
   }
 }
