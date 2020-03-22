@@ -232,6 +232,43 @@
         null,
         null
       ],
+      "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/spec/features/pets/user_can_delete_from_index_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/spec/features/pets/user_can_edit_a_pet_spec.rb": [
         1,
         null,
@@ -573,7 +610,7 @@
         1,
         1,
         1,
-        11,
+        13,
         null,
         null
       ],
@@ -581,7 +618,7 @@
         1,
         null,
         1,
-        2,
+        3,
         null,
         null,
         1,
@@ -687,6 +724,6 @@
         null
       ]
     },
-    "timestamp": 1584914613
+    "timestamp": 1584914778
   }
 }
