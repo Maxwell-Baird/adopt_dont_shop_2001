@@ -1,3 +1,8 @@
+<div class="topnav">
+  <a href="/pets/">Pets Index</a>
+  <a href="/shelters">Shelters Index</a>
+</div>
+
 <h1> All Shelters </h1>
 <a href="/shelters/new">New Shelter</a>
 <p></p>
@@ -9,6 +14,6 @@
   <form action="/shelters/<%= shelter.id %>" method="POST">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
     <input type="hidden" name="_method" value="DELETE">
-    <input type="submit" value="delete" id='delete'/>
+    <input type="submit" value="Delete Shelter" id="Delete Shelter <%= shelter.id %>"/>
   </form>
 <% end %>

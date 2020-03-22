@@ -1,17 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe "shelter show page", type: :feature do
-  it "can see shelter details" do
+  it "can move to pets page" do
     shelter_1 = Shelter.create(name: 'Broomfield Dog Shelter',
                                address: '1111 fake dr.',
                                city: 'Broomfield',
                                state: 'Colorado',
                                zip: '80020')
     visit "/shelters/#{shelter_1.id}"
-    expect(page).to have_content(shelter_1.name)
-    expect(page).to have_content("Address: #{shelter_1.address}")
-    expect(page).to have_content("City: #{shelter_1.city}")
-    expect(page).to have_content("State: #{shelter_1.state}")
-    expect(page).to have_content("Zipcode: #{shelter_1.zip}")
+    click_link "Pets"
+    expect(current_path).to eq("/shelters/#{shelter_1.id}/pets")
   end
 end
