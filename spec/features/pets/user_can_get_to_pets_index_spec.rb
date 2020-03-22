@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "navigation", type: :feature do
-  it "can move to shelter index page" do
+  it "can move to pets index page" do
     shelter_1 = Shelter.create(name: 'Broomfield Dog Shelter',
                                address: '1111 fake dr.',
                                city: 'Broomfield',
@@ -17,37 +17,37 @@ RSpec.describe "navigation", type: :feature do
                         description: 'A happy, playful guy who wants to eat meat'
     )
     visit "/shelters/#{shelter_1.id}"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/new"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/#{shelter_1.id}/edit"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/#{shelter_1.id}/pets"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
-    visit "/pets"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
+    visit "/shelters"
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/#{shelter_1.id}/edit"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/#{shelter_1.id}/edit"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/pets/#{pet_1.id}"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/#{pet_1.id}/pets/new"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/shelters/#{shelter_1.id}/pets"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
     visit "/pets/#{pet_1.id}/edit"
-    click_link "Shelter's Index"
-    expect(current_path).to eq("/shelters")
+    click_link "Pet's Index"
+    expect(current_path).to eq("/pets/")
   end
 end
