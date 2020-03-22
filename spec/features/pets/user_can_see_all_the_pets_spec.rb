@@ -38,5 +38,6 @@ RSpec.describe "pet index page", type: :feature do
     expect(page).to have_content("Sex: #{pet_2.sex}")
     expect(page).to have_content("Shelter: #{pet_2.shelter.name}")
     expect(page).to have_css("img[src*='https://www.vhv.rs/file/max/36/361319_cute-dog-png.png']")
+    
   end
 end

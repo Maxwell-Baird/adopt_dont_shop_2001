@@ -240,6 +240,7 @@
         1,
         1,
         null,
+        null,
         null
       ],
       "/Users/maxwellbaird/turing/2module/adopt_dont_shop_2001/spec/features/shelters/user_can_create_shelter_spec.rb": [
@@ -462,6 +463,6 @@
         null
       ]
     },
-    "timestamp": 1584904260
+    "timestamp": 1584904948
   }
 }

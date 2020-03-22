@@ -10,7 +10,8 @@ RSpec.describe "pet index page", type: :feature do
                         age: '12',
                         sex: 'Male',
                         shelter: shelter_1,
-                        image: 'http://pngimg.com/uploads/dog/dog_PNG50348.png'
+                        image: 'http://pngimg.com/uploads/dog/dog_PNG50348.png',
+                        description: 'A happy, playful guy who wants to eat meat'
     )
     visit "/pets/#{pet_1.id}"
     expect(page).to have_content(pet_1.name)
@@ -18,5 +19,6 @@ RSpec.describe "pet index page", type: :feature do
     expect(page).to have_content("Sex: #{pet_1.sex}")
     expect(page).to have_content("Status: #{pet_1.status}")
     expect(page).to have_css("img[src*='http://pngimg.com/uploads/dog/dog_PNG50348.png']")
+    expect(page).to have_content(pet_1.description)
   end
 end
