@@ -23,7 +23,7 @@ RSpec.describe "pet show page", type: :feature do
                          image: 'https://www.vhv.rs/file/max/36/361319_cute-dog-png.png'
      )
     visit "/pets/#{pet_1.id}"
-    click_link "Delete Pet"
+    click_button "Delete Pet"
     expect(current_path).to eq('/pets')
     expect(page).to have_content(pet_2.name)
     expect(page).to have_no_content(pet_1.name)

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-22T15:45:13-06:00">2020-03-22T15:45:13-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-22T15:53:09-06:00">2020-03-22T15:53:09-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.11
+         1.12
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>31</b> files in total.
-    <b>268</b> relevant lines. 
-    <span class="green"><b>268</b> lines covered</span> and
+    <b>272</b> relevant lines. 
+    <span class="green"><b>272</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -63,11 +63,11 @@
       <tr>
         <td class="strong"><a href="#ee46af75ecdcdba36a9cd67e4191cae57a057e31" class="src_link" title="app/controllers/pets_controller.rb">app/controllers/pets_controller.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>43</td>
-        <td>21</td>
-        <td>21</td>
+        <td>48</td>
+        <td>24</td>
+        <td>24</td>
         <td>0</td>
-        <td>1.1</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -243,9 +243,9 @@
       <tr>
         <td class="strong"><a href="#c982399af9f3869580f23b7d6bb062dd2aa310d6" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>18</td>
-        <td>15</td>
-        <td>15</td>
+        <td>19</td>
+        <td>16</td>
+        <td>16</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -418,8 +418,8 @@
     <h3>app/controllers/pets_controller.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>21</b> relevant lines. 
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>24</b> relevant lines. 
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -445,8 +445,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="4">
+          <span class="hits">2</span>
           
           <code class="ruby">    @pets = Pet.all</code>
         </li>
@@ -652,34 +652,64 @@
         <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="39">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">    Pet.destroy(params[:id])</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">  def pet_params</code>
+          <code class="ruby">    redirect_to &#39;/pets&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    params.permit(:name, :age, :description, :image, :sex, :status)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="42">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="43">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="44">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def pet_params</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="46">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    params.permit(:name, :age, :description, :image, :sex, :status)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
           
           
           <code class="ruby">end</code>
@@ -2368,8 +2398,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>16</b> relevant lines. 
+      <span class="green"><b>16</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2479,7 +2509,13 @@
           <code class="ruby">  patch &#39;/pets/:id&#39;, to: &#39;pets#update&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="18">
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  delete &#39;/pets/:id&#39;, to: &#39;pets#destroy&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">end</code>
