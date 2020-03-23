@@ -22,6 +22,6 @@ RSpec.describe "pet new page", type: :feature do
     expect(page).to have_content("Age: 4")
     expect(page).to have_content("Sex: Male")
     expect(page).to have_css("img[src*='http://www.pngall.com/wp-content/uploads/4/Golden-Retriever-Puppy-PNG.pn']")
-
+    
   end
 end
