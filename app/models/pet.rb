@@ -8,7 +8,7 @@ class Pet < ApplicationRecord
 
   before_save :default_values
   def default_values
-    self.status ||= 'adoptable' # note self.status = 'P' if self.status.nil? might be safer (per @frontendbeauty)
+    self.status ||= 'adoptable' 
   end
 
 end
